@@ -264,7 +264,7 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
 # Ejemplos: "salario*0.02", "salario/12", "salario_dia*3", "min(salario*0.1, 150000)"
 BENEFITS_FORMULAS: Dict[str, str] = {
     # Días/eventos prorrateados (ejemplos):
-    "Incapacidades cubiertas al 100% (administrativos)": "(salario/30)*10",  # 10 días/año, prorrateado mensual
+    "Incapacidades cubiertas al 100% (administrativos)": "(salario/30)*10*0.33",  # 10 días/año, prorrateado mensual
     "Día libre de cumpleaños": "(salario/30)",                               # 1 día/año, prorrateado mensual
     "Día libre de la familia": "(salario/30)",
     "Leasing (Gerencias/Vice/Presidencia)": "120_000_000 if cargo in ['Alta gerencia', 'Gerencia'] else 0",  # 1 día/semestre aprox. (ajusta si deseas)
@@ -473,7 +473,7 @@ with left:
             viene_de_formula = (base_val == 0 and name in BENEFITS_FORMULAS)
 
             if viene_de_formula:
-                st.write(f"**Valor mensual:** {fmt_cop(val_resuelto)}")
+                st.write(f"**Valor :** {fmt_cop(val_resuelto)}")
                 if nota:
                     st.caption(nota)
                 if name in errores_formula:
@@ -491,7 +491,7 @@ with left:
                         help=nota
                     )
                 else:
-                    st.write(f"**Valor mensual:** {fmt_cop(val_resuelto)}")
+                    st.write(f"**Valor :** {fmt_cop(val_resuelto)}")
                     if nota:
                         st.caption(nota)
                     val = val_resuelto
