@@ -274,7 +274,7 @@ BENEFITS_FORMULAS: Dict[str, str] = {
     "Leasing (Gerencias/Vice/Presidencia)": "120_000_000 if cargo in ['Alta gerencia', 'Gerencia'] else 0",  # 1 día/semestre aprox. (ajusta si deseas)
     "Permiso remunerado por matrimonio (3 días)": "(salario/30)*3",          # 3 días/año (si prorrateas)
     # Reglas por porcentaje / SMMLV:
-    "Auxilio educativo escolar (~60% SMLV adm.)": "(0.6*smmlv) if hijos else 0",
+    "Auxilio educativo escolar (~60% SMLV adm.)": "(0.6*smmlv) if (hijos and salario <= 9_168_000) else 0",
     "Prima extralegal de navidad (30 días)": "salario",
     # Condición por rango de SMMLV:
     "Bonificación de vacaciones (15 días)": "(salario*0.5) if 1.6 < (salario/smmlv) < 5.4 else 0",
