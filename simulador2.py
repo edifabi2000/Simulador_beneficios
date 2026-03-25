@@ -131,7 +131,7 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
     },
     "Pólizas de salud (promedio por persona)": {
         "valor": 250_000,
-        "nota": "Equivale a ~50% de la póliza (estimado promedio)."
+        "nota": "Equivale a ~50% de la póliza (estimado promedio) por evento"
     },
     "Plan celular corporativo": {
         "valor": 35_000,
@@ -139,11 +139,11 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
     },
     "Incapacidades cubiertas al 100% (administrativos)": {
         "valor": 0,
-        "nota": "Equivalente a 10 días por año"
+        "nota": "Equivalente a 10 días por año por evento"
     },
     "Auxilio de vivienda (subsidio tasa/interés)": {
         "valor": 333_333,
-        "nota": "Puntos sobre tasa; depende de política y monto del crédito."
+        "nota": "Puntos sobre tasa; depende de política y monto del crédito por evento"
     },
     "Auxilio de conectividad": {
         "valor": 60_000,
@@ -155,19 +155,19 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
     },
     "Descuento en materiales (30%)": {
         "valor": 3_000_000,
-        "nota": "10.000.000 COP aproximadamente en compras al año con este descuento, según consumo individual."
+        "nota": "10.000.000 COP aproximadamente en compras al año con este descuento, según consumo individual por evento."
     },
     "Soy Corona, compro Corona (programa comercial)": {
         "valor": 0,
-        "nota": "Descuentos especiales vía área comercial."
+        "nota": "Descuentos especiales vía área comercial. por evento"
     },
     "Descuento en vajillas (30%)": {
         "valor": 60_000,
-        "nota": "Aproximadamente 200.000 COP promedio por año."
+        "nota": "Aproximadamente 200.000 COP promedio por año o por por evento"
     },
     "Donación de materiales (banco de materiales)": {
         "valor": 0,
-        "nota": "Según y requisitos aplicacble hasta los 8SMMLV de salario"
+        "nota": "Según y requisitos aplicacble hasta los 8SMMLV de salario por evento"
     },
     "Horario flexible": {
         "valor": 0,
@@ -180,23 +180,23 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
 
     "Día libre de cumpleaños": {
         "valor": 0,
-        "nota": "1 día/año; puedes monetizarlo si quieres."
+        "nota": "1 día/año - por evento"
     },
     "Día libre de la familia": {
         "valor": 0,
-        "nota": "1 día/semestre contrario al cumpleaños."
+        "nota": "1 día/semestre contrario al cumpleaños- por evento"
     },
     "Permiso remunerado por matrimonio (3 días)": {
         "valor": 0,
-        "nota": "3 días; monetízalo si deseas (salario/30 * 3)."
+        "nota": "3 días de salario - por evento)."
     },
     "Regalo por matrimonio (vajilla)": {
         "valor": 200_000,
-        "nota": "Vajilla; no monetizado por defecto."
+        "nota": "Vajilla apoximado - valor por evento"
     },
     "Auxilio de educación superior": {
         "valor": 0,
-        "nota": "Para empleado/hijos; según política."
+        "nota": "Para empleado/hijos; según política por evento o semestre"
     },
     "Auxilio educativo escolar (~60% SMLV adm.)": {
         "valor": 0,
@@ -208,7 +208,7 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
     },
     "Leasing (Gerencias/Vice/Presidencia)": {
         "valor": 0,
-        "nota": "Por evento, depende del rol"
+        "nota": "Por evento, depende del rol - por evento"
     },
     "Prima extralegal de navidad (30 días)": {
         "valor": 0,
@@ -216,7 +216,7 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
     },
     "Bonificación de vacaciones (15 días)": {
         "valor": 0,
-        "nota": "Equivale al 50% del salario"
+        "nota": "Equivale al 50% del salario - por evento"
     },
     "Póliza de vida (12 salarios)": {
         "valor": 0,
@@ -224,11 +224,11 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
     },
     "Auxilio de fallecimiento del empleado (4–12 SMMLV)": {
         "valor": 0,
-        "nota": "Equivalente al último sueldo mensual acotado entre 4 y 12 SMMLV."
+        "nota": "Equivalente al último sueldo mensual acotado entre 4 y 12 SMMLV - por evento"
     },
     "Antigüedad en días de descanso (TTT)": {
         "valor": 0,
-        "nota": "Días por hitos"
+        "nota": "Días por hitos de antigüedad (3, 5, 7, 10, 20 años) - por evento"
     },
     "Bonificación por pensión (2 meses)": {
         "valor": 0,
@@ -248,7 +248,7 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
     },
     "Chequeos médicos ejecutivos": {
         "valor": 0,
-        "nota": "Valor por evento depende del rol"
+        "nota": "Valor por evento depende del rol - por evento"
     }
 }
 
