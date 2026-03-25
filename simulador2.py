@@ -194,10 +194,6 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
         "valor": 200_000,
         "nota": "Vajilla; no monetizado por defecto."
     },
-    "Auxilio extralegal de transporte (según rol)": {
-        "valor": 63_806,
-        "nota": "Monto definido por COE de compensación."
-    },
     "Auxilio de educación superior": {
         "valor": 0,
         "nota": "Para empleado/hijos; según política."
