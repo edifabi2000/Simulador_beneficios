@@ -154,7 +154,7 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
         "nota": "Dotación de bebidas/refrigerios."
     },
     "Descuento en materiales (30%)": {
-        "valor": 250_000,
+        "valor": 3_000_000,
         "nota": "10.000.000 COP aproximadamente en compras al año con este descuento, según consumo individual."
     },
     "Soy Corona, compro Corona (programa comercial)": {
@@ -226,10 +226,6 @@ BENEFITS_DEFAULTS: Dict[str, Dict] = {
         "valor": 0,
         "nota": "Equivalente al último sueldo mensual acotado entre 4 y 12 SMMLV."
     },
-    "Auxilio por muerte de parientes (1.5 SMMLV)": {
-        "valor": 0,
-        "nota": "Valor por evento"
-    },
     "Antigüedad en días de descanso (TTT)": {
         "valor": 0,
         "nota": "Días por hitos"
@@ -277,7 +273,6 @@ BENEFITS_FORMULAS: Dict[str, str] = {
     # Piso/techo entre 4 y 12 SMMLV:
     "Auxilio de fallecimiento del empleado (4–12 SMMLV)": "min(max(salario, 4*smmlv), 12*smmlv)",
     # Otros prorrateos referenciales:
-    "Auxilio por muerte de parientes (1.5 SMMLV)": "1.5*smmlv",
     "Auxilio por nacimiento (~40% SMLV por evento)": "0.4*smmlv",
     "Auxilio de visión (hasta 50% SMLV)": "0.5*smmlv",
     "Chequeos médicos ejecutivos": "1_500_000 if cargo in ['Alta gerencia', 'Gerencia'] else 0",
